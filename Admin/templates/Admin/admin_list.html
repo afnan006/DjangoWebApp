@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin List</title>
+</head>
+<body>
+    <h1>Admin List</h1>
+    <ul>
+        {% for admin in admins %}
+            <li>{{ admin.name }} - {{ admin.email }}</li>
+            <!-- Add more fields as needed -->
+        {% endfor %}
+    </ul>
+</body>
+</html>

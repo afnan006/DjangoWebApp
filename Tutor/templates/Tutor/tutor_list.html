@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutor List</title>
+</head>
+<body>
+    <h1>Tutor List</h1>
+    <ul>
+        {% for tutor in tutors %}
+            <li>{{ tutor.name }} - {{ tutor.email }}</li>
+            <!-- Add more fields as needed -->
+        {% endfor %}
+    </ul>
+</body>
+</html>
